@@ -1,0 +1,13 @@
+
+{
+    "name": "Getting Started Example",
+    "description": "Tower Build!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage"
+                   ],
+    "action": {
+        "default_popup": "Tower.html"
+    }
+    
+}
