@@ -71,13 +71,13 @@ class Block {
         // set the dimensions from the target block, or defaults.
         this.dimension.width = this.targetBlock
             ? this.targetBlock.dimension.width
-            : 10;
+            : 8;
         this.dimension.height = this.targetBlock
             ? this.targetBlock.dimension.height
-            : 2;
+            : 1;
         this.dimension.depth = this.targetBlock
             ? this.targetBlock.dimension.depth
-            : 10;
+            : 8;
         this.position.x = this.targetBlock ? this.targetBlock.position.x : 0;
         this.position.y = this.dimension.height * this.index;
         this.position.z = this.targetBlock ? this.targetBlock.position.z : 0;
@@ -329,7 +329,7 @@ class Game {
         let newKidOnTheBlock = new Block(lastBlock);
         this.newBlocks.add(newKidOnTheBlock.mesh);
         this.blocks.push(newKidOnTheBlock);
-        this.stage.setCamera(this.blocks.length * 2);
+        this.stage.setCamera(this.blocks.length * 0.75);
         if (this.blocks.length >= 5)
             this.instructions.classList.add("hide");
     }
